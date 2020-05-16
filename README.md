@@ -6,7 +6,7 @@
 This plugin ( only availaible on Android due to iOS restrictions ) will allow you to listen to any incoming notifications on an Android device running on Android APi level 21 or more
 
 
-Note: This pluggin is a Fork of the original plugin made by [Cachet](https://pub.dev/packages/notifications). It has some bugs causing frequent crashes and is missing features and details
+**Note:** This pluggin is a Fork of the original plugin made by [Cachet](https://pub.dev/packages/notifications) which has some bugs causing frequent crashes and is missing features and details, so I fixed it and added more features 
 
 ## Features
 Here are the details you will get from a notification
