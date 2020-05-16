@@ -23,6 +23,7 @@ var jsonDatax = json.decode(event.packageExtra);
 print(jsonDatax);
 ```
 You can refer the example folder for more detail
+
 Here are the extra data you will get from the `PackageExtra`
 
 - android.title
