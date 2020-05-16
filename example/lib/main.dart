@@ -28,7 +28,6 @@ class _MyAppState extends State<MyApp> {
   void onData(NotificationEvent event) {
     
     print(event);
-    event.p
     print('converting package extra to json');
     var jsonDatax = json.decode(event.packageExtra);
     print(jsonDatax);
