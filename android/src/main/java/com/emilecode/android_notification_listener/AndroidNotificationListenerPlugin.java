@@ -44,6 +44,24 @@ public class AndroidNotificationListenerPlugin implements EventChannel.StreamHan
     channel.setStreamHandler(plugin);
   }
 
+  public AndroidNotificationListenerPlugin(){
+
+    /* Check if permission is given, if not then go to the notification settings screen. */
+    if (!permissionGiven()) {
+      context.startActivity(new Intent(ACTION_NOTIFICATION_LISTENER_SETTINGS));
+    }
+
+    NotificationReceiver receiver = new NotificationReceiver();
+    IntentFilter intentFilter = new IntentFilter();
+    intentFilter.addAction(NotificationListener.NOTIFICATION_INTENT);
+    context.registerReceiver(receiver, intentFilter);
+
+    /* Start the notification service once permission has been given. */
+    Intent listenerIntent = new Intent(context, NotificationListener.class);
+    context.startService(listenerIntent);
+
+  }
+
   /**
    * Plugin constructor setting the context and registering the notification service.
    */

@@ -4,10 +4,10 @@ packages:
   android_notification_listener:
     dependency: "direct main"
     description:
-      name: android_notification_listener
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.3"
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.4"
   archive:
     dependency: transitive
     description:

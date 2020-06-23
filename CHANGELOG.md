@@ -18,7 +18,10 @@
 * Fixed Demo example code that was not compiling
 * Updated image link to point directly to the image inside the git
 * Fixed The documentation
-## 1.0.3 16/05/2020
 
+## 1.0.3 16/05/2020
 * Minor fix
+
+## 1.0.4 23/06/2020
+* 
 
